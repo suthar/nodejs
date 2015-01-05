@@ -5,8 +5,8 @@ function route(pathname, handle, response, postData) {
 	console.log("got passed with postData "+postData);
 	handle[pathname](response, postData);
     }else{
-	console.log("No handler to handle such request");
-	response.write("No handler to handle such request");
+	console.log("No handler to handle such request.");
+	response.write("No handler to handle such request.");
 	response.end()
     }
 }
